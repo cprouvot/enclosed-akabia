@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Enclosed",
+    "title": "Akabia",
     "description": "Invia note private e sicure"
   },
   "insecureContextWarning": {
@@ -24,8 +24,8 @@
     },
     "settings": {
       "documentation": "Documentazione",
-      "cli": "Enclosed CLI",
-      "support": "Sostieni Enclosed",
+      "cli": "Akabia CLI",
+      "support": "Sostieni Akabia",
       "report-bug": "Segnala un bug",
       "logout": "Disconnetti",
       "contribute-to-i18n": "Contribuisci alla traduzione"
@@ -38,8 +38,8 @@
     "version": "Versione"
   },
   "login": {
-    "title": "Accedi a Enclosed",
-    "description": "Questa è un'istanza privata di Enclosed. Accedi per creare delle note.",
+    "title": "Accedi a Akabia",
+    "description": "Questa è un'istanza privata di Akabia. Accedi per creare delle note.",
     "email": "Email",
     "password": "Password",
     "submit": "Accedi",
