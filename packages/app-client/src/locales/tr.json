@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Enclosed",
+    "title": "Akabia",
     "description": "Gizli ve güvenli notlar gönderin"
   },
   "insecureContextWarning": {
@@ -24,8 +24,8 @@
     },
     "settings": {
       "documentation": "Dokümantasyon",
-      "cli": "Enclosed CLI",
-      "support": "Enclosed’a destek olun",
+      "cli": "Akabia CLI",
+      "support": "Akabia’a destek olun",
       "report-bug": "Hata bildir",
       "logout": "Çıkış yap",
       "contribute-to-i18n": "i18n’ye katkıda bulunun"
@@ -38,8 +38,8 @@
     "version": "Sürüm"
   },
   "login": {
-    "title": "Enclosed’a giriş yapın",
-    "description": "Bu, Enclosed’un özel bir sürümüdür. Not oluşturabilmek için kimlik bilgilerinizi girin.",
+    "title": "Akabia’a giriş yapın",
+    "description": "Bu, Akabia’un özel bir sürümüdür. Not oluşturabilmek için kimlik bilgilerinizi girin.",
     "email": "E-posta",
     "password": "Şifre",
     "submit": "Giriş yap",

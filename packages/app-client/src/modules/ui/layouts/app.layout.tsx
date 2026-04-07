@@ -1,5 +1,4 @@
 import { authStore } from '@/modules/auth/auth.store';
-import { buildTimeConfig } from '@/modules/config/config.constants';
 import { getConfig } from '@/modules/config/config.provider';
 import { buildDocUrl } from '@/modules/docs/docs.models';
 import { useI18n } from '@/modules/i18n/i18n.provider';
@@ -9,7 +8,7 @@ import { useThemeStore } from '@/modules/theme/theme.store';
 import { Button } from '@/modules/ui/components/button';
 import { DropdownMenu } from '@kobalte/core/dropdown-menu';
 
-import { A, useNavigate } from '@solidjs/router';
+import { useNavigate } from '@solidjs/router';
 import { type Component, type ParentComponent, Show } from 'solid-js';
 import { DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger } from '../components/dropdown-menu';
 
@@ -107,10 +106,6 @@ export const Navbar: Component = () => {
             </Button>
           )}
 
-          <Button variant="ghost" class="text-lg px-0 size-9 hidden md:inline-flex" as={A} href="https://github.com/CorentinTh/enclosed" target="_blank" rel="noopener noreferrer" aria-label={t('navbar.github-repository')}>
-            <div class="i-tabler-brand-github"></div>
-          </Button>
-
           <DropdownMenu>
             <DropdownMenuTrigger as={Button} class="text-lg px-0 size-9 hidden md:inline-flex" variant="ghost" aria-label={t('navbar.change-theme')}>
               <div classList={{ 'i-tabler-moon': themeStore.getColorMode() === 'dark', 'i-tabler-sun': themeStore.getColorMode() === 'light' }}></div>
@@ -139,11 +134,6 @@ export const Navbar: Component = () => {
             <DropdownMenuContent class="w-46">
 
               {/* Mobile only items */}
-              <DropdownMenuItem as="a" class="flex items-center gap-2 cursor-pointer md:hidden" target="_blank" href="https://github.com/CorentinTh/enclosed" rel="noopener noreferrer">
-                <div class="i-tabler-brand-github text-lg"></div>
-                {t('navbar.github')}
-              </DropdownMenuItem>
-
               <DropdownMenuSub>
                 <DropdownMenuSubTrigger as="a" class="flex items-center gap-2 md:hidden" aria-label={t('navbar.change-theme')}>
                   <div class="text-lg" classList={{ 'i-tabler-moon': themeStore.getColorMode() === 'dark', 'i-tabler-sun': themeStore.getColorMode() === 'light' }}></div>
@@ -207,34 +197,7 @@ export const Navbar: Component = () => {
 };
 
 export const Footer: Component = () => {
-  const { t } = useI18n();
-
-  return (
-    <div class="bg-surface border-t border-border py-6 px-6 text-center text-muted-foreground flex flex-col sm:flex-row items-center justify-center gap-1">
-      <div>
-        {t('footer.crafted-by')}
-        {' '}
-        <Button variant="link" as="a" href="https://corentin.tech" target="_blank" class="p-0 text-muted-foreground underline hover:text-primary transition font-normal h-auto">Corentin Thomasset</Button>
-        .
-      </div>
-      <div>
-        {t('footer.source-code')}
-        {' '}
-        <Button variant="link" as="a" href="https://github.com/CorentinTh/enclosed" target="_blank" class="p-0 text-muted-foreground underline hover:text-primary transition font-normal h-auto">{t('footer.github')}</Button>
-        .
-      </div>
-
-      <div>
-        {t('footer.version')}
-        {' '}
-        <Button variant="link" as="a" href={`https://github.com/CorentinTh/enclosed/tree/v${buildTimeConfig.enclosedVersion}`} target="_blank" class="p-0 text-muted-foreground underline hover:text-primary transition font-normal h-auto">
-          v
-          {buildTimeConfig.enclosedVersion}
-        </Button>
-
-      </div>
-    </div>
-  );
+  return null;
 };
 
 export const AppLayout: ParentComponent = (props) => {
